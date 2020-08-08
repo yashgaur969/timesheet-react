@@ -1,0 +1,107 @@
+@import "../../styles/commons.scss";
+
+.new-entry-sheet {
+  position: fixed;
+  min-height: 18em;
+  background: $white;
+  bottom: 0;
+  width: 100%;
+  left: 0;
+  height: 35%;
+  border: 1px solid $grey-10;
+  box-shadow:
+  0 0px 2.5px rgba(0, 0, 0, 0.02),
+  0 0px 6px rgba(0, 0, 0, 0.028),
+  0 0px 11.3px rgba(0, 0, 0, 0.035),
+  0 0px 20.1px rgba(0, 0, 0, 0.042),
+  0 0px 37.6px rgba(0, 0, 0, 0.05),
+  0 0px 90px rgba(0, 0, 0, 0.07);
+  border-radius: 18px 18px 0px 0px;
+}
+
+.sheet-header {
+  display: flex;
+  padding: 1em 1em 0.2em 1em;
+  justify-content: space-between;
+  .sheet-title {
+    .title {
+      font-size: 1.2em;
+      font-weight: 600;  
+    }
+  }
+
+  .close-sheet-btn {
+    border: none;
+    background: none;
+    .close-icon {
+      height: 2em;
+    }
+  }  
+}
+
+.sheet-body {
+  padding: 0.5em;
+  .row {
+    display: flex;
+    justify-content: space-between;
+    margin: 0.5em 0;
+
+    .task-select {
+      border: 1px solid $grey-10;
+      height: 2em;
+      width: 10em;
+      font-size: 1em;
+      padding: 0 0.5em;
+      border-radius: 4px;
+      margin-top: 0.5em;
+    }
+  
+    .task-input, .time-input {
+      width: 50%;
+    }
+
+    .time-input-fields {
+      display: flex;
+      display: flex;
+      justify-content: space-around;
+      margin-top: 0.5em;
+    }
+
+    .hour-input, .minute-input {
+      border: 1px solid $grey-10;
+      height: 2em;
+      width: 3em;
+      font-size: 1em;
+      padding: 0 0.5em;
+      border-radius: 4px;
+      margin-right: 0.2em;
+    }
+
+    .time-indicator {
+      font-weight: 500;
+    }
+
+    .remarks-field {
+      width: 90%;
+      .remarks-input {
+        border: 1px solid $grey-10;
+        height: 2em;
+        width: 100%;
+        font-size: 1em;
+        padding: 0 0.5em;
+        border-radius: 4px;
+        margin-top: 0.5em;
+      }
+    }
+    
+  }
+}
+
+.sheet-footer {
+  padding: 0 1em;
+  margin: 0.5em;
+  .action-group {
+    display: flex;
+    justify-content: flex-end;
+  }
+}

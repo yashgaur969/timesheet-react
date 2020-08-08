@@ -1,0 +1,60 @@
+@import "../../styles/commons.scss";
+
+.task-list {
+  margin: 1em 0;
+  overflow: auto;
+  height: 100%;
+  padding: 0 1em;
+}
+
+.task-card {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1em;
+  border: 1px solid $grey-10;
+  border-radius: 4px;
+  background: $white;
+  margin: 1em 0;
+
+  .card-header {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .body-text {
+    margin: 0.5em 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .task-title {
+    font-size: 1.5em;
+    font-weight: 700;
+  }
+
+  .task-time {
+    font-size: 1.5em;
+    font-weight: 300;
+  }
+
+  .remove-task-btn {
+    border: none;
+    height: 2em;
+    width: 2em;
+    border-radius: 50%;
+    position: absolute;
+    right: -4%;
+    top: -10%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    background: $grey-10;
+
+    .remove-task-icon {
+      height: 1.2em;
+    }
+  }
+}

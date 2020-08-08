@@ -1,0 +1,43 @@
+@import "./styles/commons.scss";
+
+.app-container {
+  padding: 0.5em;
+  background: $background-blue;
+  height: 100vh;
+  overflow: hidden;
+
+  .floating-add-entry-btn {
+    height: 5em;
+    width: 5em;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 5%;
+    right: 5%;
+    background: $primary-blue;
+    border: none;
+  }
+
+  .add-icon {
+    height: 2em;
+  }
+
+  .empty-text {
+    font-weight: 300;
+    margin: 2em 0.5em;
+  }
+}
+
+.progress-container {
+  height: 0.5em;
+  border-radius: 4px;
+  background: $grey-40;
+  .progress-bar {
+    height: inherit;
+    border-radius: inherit;
+  }
+}
+
+h1 {
+  margin: 0.5em 0;
+  color: $primary-blue;
+}
